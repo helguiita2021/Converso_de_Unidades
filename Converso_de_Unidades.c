@@ -54,3 +54,32 @@ float metroParaMilimetro(float metro) {
        
 
 }
+int main() {
+    int opcao, subOpcao;
+    float valor, resultado;
+
+    do {
+        exibirMenuPrincipal();
+        scanf("%d", &opcao);
+
+        if (opcao == 0) {
+            printf("Saindo...\n");
+            break;
+        }
+
+        exibirMenuConversao(opcao);
+        scanf("%d", &subOpcao);
+
+        printf("Digite o valor a ser convertido: ");
+        scanf("%f", &valor);
+
+        switch (opcao) {
+            case 1:
+                if (subOpcao == 1) {
+                    resultado = metroParaCentimetro(valor);
+                    printf("%.2f metros = %.2f centimetros\n", valor, resultado);
+                } else if (subOpcao == 2) {
+                    resultado = metroParaMilimetro(valor);
+                    printf("%.2f metros = %.2f milimetros\n", valor, resultado);
+                }
+                break;
