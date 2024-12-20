@@ -43,7 +43,7 @@ float metroParaMilimetro(float metro) {
         break;
 =======
         
-        case 4:
+        case 4:// Prte vitor freire
            float cel, kel, fah;
     int op;
 >>>>>>> 1285c9e692ba3e0f26e1bfa45ef1080ced59c6c4
