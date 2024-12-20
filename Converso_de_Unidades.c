@@ -3,7 +3,7 @@
 #include<math.h>
 #include <locale.h>
 
-//Instrutura do MENU do Código
+//Estrutura do MENU do Código
 
 int main( ){
     setlocale(LC_ALL, "Portuguese");
