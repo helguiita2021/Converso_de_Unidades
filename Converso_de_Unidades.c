@@ -7,6 +7,14 @@
 int main( ){
     int opcao;
 
+//Comprimento
+float metroParaCentimetro(float metro) {
+    return metro * 100;
+}
+
+float metroParaMilimetro(float metro) {
+    return metro * 1000;
+}
 
     while(1){ // MENU INTERATIVO
     printf("BEM VINDO AO PROGRAMA DE CONVERSÃO DE UNIDADES - EMBARCATECH:\n");
@@ -25,6 +33,11 @@ int main( ){
     scanf("%d",&opcao);
     
     switch(opcao){
+        case 1:
+        printf("Conversão de Comprimento:\n");
+        printf("1. Metro para Centímetro\n");
+        printf("2. Metro para Milímetro\n");
+        break;
 
 
 
