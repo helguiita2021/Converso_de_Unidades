@@ -46,7 +46,6 @@ float metroParaMilimetro(float metro) {
         case 4:
            float cel, kel, fah;
     int op;
->>>>>>> 1285c9e692ba3e0f26e1bfa45ef1080ced59c6c4
 
     printf("Escolha o tipo de conversão:\n");
     printf("1. Kelvin para Celsius.\n");
