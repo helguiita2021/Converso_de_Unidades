@@ -15,6 +15,14 @@ float metroParaMilimetro(float metro)
 {
     return metro * 1000;
 }
+float centimetroparaMetro(float metro)
+{
+    return metro / 100;
+}
+float milimetroParaMetro(float metro)
+{
+    return metro / 1000;
+}
 
 int main()
 {
@@ -44,6 +52,8 @@ int main()
             printf("Conversão de Comprimento:\n");
             printf("1. Metro para Centímetro\n");
             printf("2. Metro para Milímetro\n");
+            printf("3. Centimetro para Metro\n");
+            printf("4. Milimetro para Metro\n");
             scanf("%d", &opcaocomp);
             printf("Digite o valor que deseja converter: \n");
             scanf("%f", &metro);
@@ -51,13 +61,25 @@ int main()
             {
                 resultado = metroParaCentimetro(metro);
 
-                printf("O valor em Cm é: %.2f \n", resultado);
+                printf("O valor é: %.2f cm \n", resultado);
             }
             else if (opcaocomp == 2)
             {
                 resultado = metroParaMilimetro(metro);
 
-                printf("O valor em mm é: %.2f \n", resultado);
+                printf("O valor é: %.2f mm \n", resultado);
+            }
+            else if (opcaocomp == 3)
+            {
+                resultado = centimetroparaMetro(metro);
+
+                printf("O valor é: %.2f m \n", resultado);
+            }
+            else if (opcaocomp == 4)
+            {
+                resultado = milimetroParaMetro(metro);
+
+                printf("O valor é: %.2f m \n", resultado);
             }
             break;
         default:
